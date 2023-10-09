@@ -78,6 +78,9 @@ $ docker extension uninstall mochoa/jupyter-docker-extension:22.4.1
 Extension "Jupyter Notebook" uninstalled successfully
 ```
 
-## Sources
+### Setup on Local Workstation
+Docker Extensions SDK Quickstart: https://docs.docker.com/desktop/extensions-sdk/quickstart/
+Jupyter Container Docs: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 
-As usual the code of this extension is at [GitHub](https://github.com/marcelo-ochoa/jupyter-docker-extension), feel free to suggest changes and make contributions, note that I am a beginner developer of React and TypeScript so contributions to make this UI better are welcome.
+1. Run in root of project: `docker build -t jupyter-docker-extension .`  
+1. Run: `docker extension install jupyter-docker-extension`

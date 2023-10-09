@@ -9,9 +9,11 @@ services:
     container_name: jupyter_embedded_dd_vm
     restart: unless-stopped
     volumes:
-      - jupyter_data:/home/jovyan
+      # - jupyter_data:/home/jovyan
+      - D:\Development:/home/jovyan:rw
+      - D:\:/host_Data
     environment:
-      TZ: America/Argentina/Buenos_Aires
+      TZ: America/Los_Angeles
     ports:
       - 58888:8888
 volumes:
